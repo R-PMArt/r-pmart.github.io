@@ -1,9 +1,374 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="RPMArt" />
+    <meta
+      name="keywords"
+      content="RPMArt, Robotics, Robot Learning, Articulation, Robustness, Sim2Real"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <title>RPMArt: Towards Robust Perception and Manipulation for Articulated Objects</title> -->
+    <title>RPMArt</title>
 
-<h1>Hello world! </h1>
-<p>Test here.</p>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-04FWTV95EF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-</body>
+      gtag("config", "G-04FWTV95EF");
+    </script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <link rel="icon" href="./static/images/favicon.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+  </head>
+
+  <body>
+    <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center">
+          <a class="navbar-item" href="https://r-pmart.github.io/">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> More Research </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://xxx"> XXX </a>
+              <a class="navbar-item" href="https://xxx"> XXX </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                <span class="highlight">RPMArt</span
+                ><span class="lowlight">: Towards </span>
+                <span class="highlight">R</span
+                ><span class="lowlight">obust </span>
+                <span class="highlight">P</span
+                ><span class="lowlight">erception and </span>
+                <span class="highlight">M</span
+                ><span class="lowlight">anipulation for </span>
+                <span class="highlight">Art</span
+                ><span class="lowlight">iculated Objects</span>
+              </h1>
+
+              <!-- <h4 class="title is-4 conference">IROS 2024</h4> -->
+
+              <!-- <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://dadadadawjb.github.io/">Junbo Wang</a
+                  ><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:sjtu-wenhai@sjtu.edu.cn">Wenhai Liu</a
+                  ><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:yqjllxs@sjtu.edu.cn">Qiaojun Yu</a
+                  ><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://qq456cvb.github.io/">Yang You</a
+                  ><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:liuliu@hfut.edu.cn">Liu Liu</a><sup>3</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:wangweiming@sjtu.edu.cn">Weiming Wang</a
+                  ><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.mvig.org/">Cewu Lu</a><sup>1</sup>,
+                </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <sup>1</sup
+                ><span class="author-block">Shanghai Jiao Tong University</span
+                >, <sup>2</sup
+                ><span class="author-block">Stanford University</span>,
+                <sup>3</sup
+                ><span class="author-block"
+                  >Hefei University of Technology</span
+                >
+              </div> -->
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/abs/xxxx.xxxxx"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a
+                      href="https://www.youtube.com/watch?v=xxxxxx"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Video</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code (coming soon)</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fa fa-database"></i>
+                      </span>
+                      <span>Data (coming soon)</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Articulated objects are commonly found in daily life. It is
+                essential that robots can exhibit robust perception and
+                manipulation skills for articulated objects in real-world
+                robotic applications. However, existing methods for articulated
+                objects insufficiently address noise in point clouds and
+                struggle to bridge the gap between simulation and reality, thus
+                limiting the practical deployment in real-world scenarios. To
+                tackle these challenges, we propose a framework towards
+                <b>R</b>obust <b>P</b>erception and <b>M</b>anipulation for
+                <b>Art</b>iculated Objects (<b>RPMArt</b>), which learns to
+                estimate the articulation parameters and manipulate the
+                articulation part from the noisy point cloud. Our primary
+                contribution is a <b>Ro</b>bust <b>Art</b>iculation
+                <b>Net</b>work (<b>RoArtNet</b>) that is able to predict both
+                joint parameters and affordable points robustly by local feature
+                learning and point tuple voting. Moreover, we introduce an
+                articulation-aware classification scheme to enhance its ability
+                for sim-to-real transfer. Finally, with the estimated affordable
+                point and articulation joint constraint, the robot can generate
+                robust actions to manipulate articulated objects. After learning
+                only from synthetic data, RPMArt is able to transfer zero-shot
+                to real-world articulated objects. Experimental results confirm
+                our approach's effectiveness, with our framework achieving
+                state-of-the-art performance in both noise-added simulation and
+                real-world environments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Video</h2>
+            <div class="publication-video">
+              <iframe
+                src="https://www.youtube.com/embed/xxx?rel=0&amp;showinfo=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Framework</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="column content has-text-justified">
+              <ul>
+                <li><b>Robust articulation network</b></li>
+                <ul>
+                  <li>Input: single-view point cloud</li>
+                  <li>Output: joint parameters and affordable point</li>
+                </ul>
+                <li><b>Affordance-based physics-guided manipulation</b></li>
+                <ul>
+                  <li>Affordable grasp pose selection</li>
+                  <li>Articulation joint constraint</li>
+                </ul>
+              </ul>
+              <br />
+
+              <p>
+                During training, several voting targets are generated by part
+                segmentation, joint parameters and affordable points from the
+                simulator to supervise RoArtNet. When given the real-world noisy
+                point cloud observation, RoArtNet can still generate robust
+                joint parameters and affordable points estimation by point tuple
+                voting. Then, affordable initial grasp poses can be selected
+                from AnyGrasp-generated grasp poses based on the estimated
+                affordable points, and subsequent actions can be constrained by
+                the estimated joint parameters.
+              </p>
+            </div>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="content">
+              <img
+                src="./static/images/framework.png"
+                alt="Framework"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered has-text-justified">
+          <div class="column content">
+            <img
+              src="./static/images/roartnet.png"
+              alt="RoArtNet"
+              style="width: 100%"
+            />
+            <p>
+              Our primary contribution is the robust articulation network, 
+              which is carefully designed to be <b>robust</b> and <b>sim-to-real</b>, 
+              by <b>local feature learning</b>, <b>point tuple voting</b>, and an <b>articulation awareness</b> scheme.
+              First, a collection of point tuples are uniformly sampled from the point cloud.
+              For each point tuple, we predict several voting targets with a neural network from the local context features of the point tuple.
+              Further, an articulation score is applied to supervise the neural network so that the network is aware of the articulation structure.
+              Then, we can generate multiple candidates using the predicted voting targets, given the one degree-of-freedom ambiguity constraint.
+              The candidate joint origin, joint direction and affordable point with the most votes, 
+              from only point tuples with high articulation score, are selected as the final estimation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title">BibTeX</h2>
+        </div>
+        <pre><code>@article{
+    xxx,
+    title = {xxx},
+    author = {xxx},
+    journal = {xxx},
+    year = {xxx}
+}
+</code></pre>
+      </div>
+    </section> -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This website is licensed under a
+                <a
+                  rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/"
+                  >Creative Commons Attribution-ShareAlike 4.0 International
+                  License</a
+                >. This page is modified upon
+                <a href="https://nerfies.github.io/">Nerfies</a> website (<a
+                  href="https://github.com/nerfies/nerfies.github.io"
+                  >source</a
+                >).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
