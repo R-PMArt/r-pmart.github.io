@@ -154,11 +154,14 @@ body {
 table {
   border-collapse: collapse;
   border: 1px solid black;
+  border-width: 2px 0 2px 0px;
 }
 
 th,
 td {
   border: 1px solid black;
+  text-align: center!important;
+  vertical-align: middle!important;
 }
 
 th {
@@ -172,7 +175,7 @@ td {
   border-bottom: none;
 }
 
-th:first-child,
+/* th:first-child,
 td:first-child {
   border-left: 1px solid black;
 }
@@ -180,7 +183,7 @@ td:first-child {
 th:last-child,
 td:last-child {
   border-right: 1px solid black;
-}
+} */
 
 .highlight {
   color: black;

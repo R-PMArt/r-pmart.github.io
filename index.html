@@ -331,6 +331,285 @@
       </div>
     </section>
 
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Experimental Results</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered has-text-justified">
+          <div class="column content">
+            <p>
+              We evaluate RPMArt in both noise-added simulation and real-world environments.
+              In the simulation environment, we add different levels of noise to the point clouds to test the robustness of models.
+              And we also test the sim-to-real transfer ability of RPMArt by directly applying the model trained on synthetic data to real-world scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h3 class="title is-4">Simulation Perception</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered has-text-justified">
+          <div class="column content">
+            <img
+              src="./static/images/sim_perception_origin_all.png"
+              alt="sim_perception_origin_all"
+              style="width: 100%"
+            />
+            <br />
+            <p align="center">Joint origin estimation results</p>
+          </div>
+
+          <div class="column content">
+            <img
+              src="./static/images/sim_perception_direction_all.png"
+              alt="sim_perception_direction_all"
+              style="width: 100%"
+            />
+            <br />
+            <p align="center">Joint direction estimation results</p>
+          </div>
+
+          <div class="column content">
+            <img
+              src="./static/images/sim_perception_affordance_all.png"
+              alt="sim_perception_affordance_all"
+              style="width: 100%"
+            />
+            <br />
+            <p align="center">Affordable point estimation results</p>
+          </div>
+        </div>
+
+        <p>
+          We gradually add higher level of noise to the input point clouds, 
+          and test the joint parameters and affordable points estimation performance.
+          Lower is better.
+          Error bars represent the standard deviation.
+          Results are averaged across six object categories.
+          This shows that RoArtNet is robust to noise in the input point clouds.
+        </p>
+
+        <br />
+        <p>
+          <details>
+            <summary><b>Results for each object category.</b></summary>
+            <br />
+
+            <table class="table is-striped is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Joint origin</th>
+                  <th>Joint direction</th>
+                  <th>Affordable point</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Microwave</td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_origin_microwave.png"
+                      alt="sim_perception_origin_microwave"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_direction_microwave.png"
+                      alt="sim_perception_direction_microwave"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_affordance_microwave.png"
+                      alt="sim_perception_affordance_microwave"
+                      style="width: 100%"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Refrigerator</td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_origin_refrigerator.png"
+                      alt="sim_perception_origin_refrigerator"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_direction_refrigerator.png"
+                      alt="sim_perception_direction_refrigerator"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_affordance_refrigerator.png"
+                      alt="sim_perception_affordance_refrigerator"
+                      style="width: 100%"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Safe</td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_origin_safe.png"
+                      alt="sim_perception_origin_safe"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_direction_safe.png"
+                      alt="sim_perception_direction_safe"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_affordance_safe.png"
+                      alt="sim_perception_affordance_safe"
+                      style="width: 100%"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Storage Furniture</td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_origin_storagefurniture.png"
+                      alt="sim_perception_origin_storagefurniture"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_direction_storagefurniture.png"
+                      alt="sim_perception_direction_storagefurniture"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_affordance_storagefurniture.png"
+                      alt="sim_perception_affordance_storagefurniture"
+                      style="width: 100%"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Drawer</td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_origin_drawer.png"
+                      alt="sim_perception_origin_drawer"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_direction_drawer.png"
+                      alt="sim_perception_direction_drawer"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_affordance_drawer.png"
+                      alt="sim_perception_affordance_drawer"
+                      style="width: 100%"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Washing Machine</td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_origin_washingmachine.png"
+                      alt="sim_perception_origin_washingmachine"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_direction_washingmachine.png"
+                      alt="sim_perception_direction_washingmachine"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./static/images/sim_perception_affordance_washingmachine.png"
+                      alt="sim_perception_affordance_washingmachine"
+                      style="width: 100%"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              Results show that all baselines and RoArtNet achieve high estimation precision without noise added across all object categories.
+              Nevertheless, with the increasing level of noise, 
+              all three baselines exhibit a pronounced increase in estimation errors, 
+              while the mean estimation error of RoArtNet increases very slowly.
+              And the baselines also have much higher standard deviation compared to RoArtNet when high level of noise is added.
+              There also exist some interesting phenomena in the results.
+              The StorageFurniture and Drawer categories have much higher estimation errors for ANCSH and GAMMA compared to other categories.
+              This is possibly because the StorageFurniture and Drawer categories comprise relatively small articulation parts, 
+              while the ANCSH and GAMMA models somehow rely on the part segmentation to finish the estimation.
+              In addition, the two methods both contain an optimization-based procedure, 
+              i.e. RANSAC transformation estimation for ANCSH and DBSCAN part clustering for GAMMA, 
+              which may be unsolvable when the part segmentation is not accurate.
+              It is also interesting that the WashingMachine category demonstrates partly a decreasing trend when the noise level is high.
+            </p>
+          </details>
+        </p>
+        <br />
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h3 class="title is-4">Simulation Manipulation</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h3 class="title is-4">Real-world Perception</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h3 class="title is-4">Real-world Manipulation</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
         <div class="columns is-centered has-text-centered">
