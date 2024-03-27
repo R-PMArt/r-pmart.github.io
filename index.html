@@ -594,6 +594,251 @@
       </div>
 
       <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered has-text-justified">
+          <div class="column content">
+            <p>
+              We also add different levels of noise to the input point clouds, 
+              and report the manipulation success rates.
+              We run around 100 trials per object instance for each task.
+              Higher is better.
+              Results are averaged across six tasks.
+              We also run manipulation experiments using the ground truth joint parameters and affordable points, 
+              and the average success rates are 96.694% and 99.627% for pulling and pushing respectively.
+              It demonstrates that RPMArt can still stably manipulate articulated objects with inaccurate perception results.
+              We also show the twelve task examples finished by RPMArt under noise level 2.
+              We can observe that the perception results are still robust to noise but actually not perfect, 
+              but RPMArt can still successfully manipulate the articulated objects.
+            </p>
+          </div>
+
+          <div class="column content">
+            <img
+              src="./static/images/sim_manipulation_all.png"
+              alt="sim_manipulation_all"
+              style="width: 100%"
+            />
+            <br />
+            <p align="center">Manipulation results</p>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered has-text-justified">
+          <div class="column content">
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/sim_microwave_pull.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p align="center">Pull Microwave</p>
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/sim_refrigerator_pull.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p align="center">Pull Refrigerator</p>
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/sim_storagefurniture_prismatic_pull.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p align="center">Pull StorageFurniture (Prismatic)</p>
+          </div>
+
+          <div class="column content">
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/sim_safe_pull.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p align="center">Pull Safe</p>
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/sim_storagefurniture_revolute_pull.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p align="center">Pull StorageFurniture (Revolute)</p>
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/sim_storagev2furniture_pull.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p align="center">Pull Drawer</p>
+          </div>
+
+          <div class="column content">
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/sim_microwave_push.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p align="center">Push Microwave</p>
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/sim_refrigerator_push.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p align="center">Push Refrigerator</p>
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/sim_storagefurniture_prismatic_push.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p align="center">Push StorageFurniture (Prismatic)</p>
+          </div>
+
+          <div class="column content">
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/sim_safe_push.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p align="center">Push Safe</p>
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/sim_storagefurniture_revolute_push.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p align="center">Push StorageFurniture (Revolute)</p>
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/sim_storagev2furniture_push.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p align="center">Push Drawer</p>
+          </div>
+        </div>
+
+        <!-- <br /> -->
+        <p>
+          <details>
+            <summary><b>Results for each task.</b></summary>
+            <br />
+
+            <table class="table is-striped is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Tasks</th>
+                  <th>Results</th>
+                  <th>Tasks</th>
+                  <th>Results</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Pull/Push Microwave</td>
+                  <td>
+                    <img
+                      src="./static/images/sim_manipulation_microwave.png"
+                      alt="sim_manipulation_microwave"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>Pull/Push Refrigerator</td>
+                  <td>
+                    <img
+                      src="./static/images/sim_manipulation_refrigerator.png"
+                      alt="sim_manipulation_refrigerator"
+                      style="width: 100%"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pull/Push Safe</td>
+                  <td>
+                    <img
+                      src="./static/images/sim_manipulation_safe.png"
+                      alt="sim_manipulation_safe"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>Pull/Push StorageFurniture (Revolute)</td>
+                  <td>
+                    <img
+                      src="./static/images/sim_manipulation_storagefurniture_revolute.png"
+                      alt="sim_manipulation_storagefurniture_revolute"
+                      style="width: 100%"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pull/Push StorageFurniture (Prismatic)</td>
+                  <td>
+                    <img
+                      src="./static/images/sim_manipulation_storagefurniture_prismatic.png"
+                      alt="sim_manipulation_storagefurniture_prismatic"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td>Pull/Push Drawer</td>
+                  <td>
+                    <img
+                      src="./static/images/sim_manipulation_drawer.png"
+                      alt="sim_manipulation_drawer"
+                      style="width: 100%"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              Results show that RPMArt achieves the highest success rate under noise level 4 across almost all tasks except Push Refrigerator.
+              And we can observe the least degradation in performance of RPMArt with the increase of noise.
+              Actually, when no noise is added, RPMArt only achieves comparable or even slightly worse performance than the baselines, 
+              especially GAMMA.
+              There also exist some interesting phenomena in the results.
+              Under noise level 4, PointNet++-based method always achieves better performance than ANCSH and GAMMA in pushing tasks, 
+              while ANCSH and GAMMA often have better results in pulling tasks.
+              Note that pulling tasks are often considered more difficult than pushing tasks, 
+              since pulling tasks often require first grasping the target part while it is unnecessary for pushing tasks.
+              However, ANCSH and GAMMA often obtain higher success rates than PointNet++-based method without noise added.
+              In addition, for Pull/Push StorageFurniture (Prismatic) and Pull/Push Drawer under noise level 4, 
+              ANCSH and GAMMA achieve much lower success rates, 
+              which may also be attributed to the fact that these parts are relatively small, 
+              as discussed in simulation perception.
+            </p>
+          </details>
+        </p>
+        <br />
+      </div>
+
+      <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <h3 class="title is-4">Real-world Perception</h3>
