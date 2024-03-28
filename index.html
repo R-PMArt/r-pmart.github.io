@@ -847,6 +847,758 @@
       </div>
 
       <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered has-text-justified">
+          <div class="column content is-four-fifths">
+            <table class="table is-striped is-fullwidth">
+              <thead>
+                <tr>
+                  <th rowspan="2">Category</th>
+                  <th rowspan="2">Method</th>
+                  <th colspan="3">Error</th>
+                </tr>
+                <tr>
+                  <td>Orig. (cm)</td>
+                  <td>Dir. (<sup>o</sup>)</td>
+                  <td>Afford. (cm)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="4">Microwave</td>
+                  <td>PointNet++</td>
+                  <td>4.495<font size="1">±3.573</font></td>
+                  <td>9.273<font size="1">±5.828</font></td>
+                  <td>15.443<font size="1">±4.730</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>5.103<font size="1">±5.522</font></td>
+                  <td>9.166<font size="1">±9.557</font></td>
+                  <td>12.711<font size="1">±7.927</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td><b>2.531</b><font size="1">±2.901</font></td>
+                  <td>9.911<font size="1">±10.671</font></td>
+                  <td>7.242<font size="1">±10.191</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td>3.830<font size="1">±<b>2.372</b></font></td>
+                  <td><b>5.189</b><font size="1">±<b>3.619</b></font></td>
+                  <td><b>6.754</b><font size="1">±<b>3.275</b></font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Refrigerator</td>
+                  <td>PointNet++</td>
+                  <td>5.210<font size="1">±4.274</font></td>
+                  <td>9.605<font size="1">±5.340</font></td>
+                  <td>12.475<font size="1">±9.505</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>5.938<font size="1">±5.798</font></td>
+                  <td><b>7.998</b><font size="1">±5.910</font></td>
+                  <td>12.814<font size="1">±13.604</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>4.019<font size="1">±4.580</font></td>
+                  <td>8.684<font size="1">±6.455</font></td>
+                  <td>12.331<font size="1">±9.974</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>2.111</b><font size="1">±<b>1.701</b></font></td>
+                  <td>8.491<font size="1">±<b>4.270</b></font></td>
+                  <td><b>5.849</b><font size="1">±<b>2.797</b></font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Safe</td>
+                  <td>PointNet++</td>
+                  <td>5.985<font size="1">±4.162</font></td>
+                  <td>5.936<font size="1">±2.861</font></td>
+                  <td>9.235<font size="1">±5.630</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>5.167<font size="1">±6.758</font></td>
+                  <td>7.706<font size="1">±14.275</font></td>
+                  <td>8.505<font size="1">±9.768</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td><b>3.179</b><font size="1">±3.857</font></td>
+                  <td>8.156<font size="1">±13.737</font></td>
+                  <td>9.062<font size="1">±9.667</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td>4.116<font size="1">±<b>2.428</b></font></td>
+                  <td><b>5.878</b><font size="1">±<b>2.769</b></font></td>
+                  <td><b>8.349</b><font size="1">±<b>4.391</b></font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">StorageFurniture</td>
+                  <td>PointNet++</td>
+                  <td>7.542<font size="1">±4.517</font></td>
+                  <td><b>8.776</b><font size="1">±<b>4.991</b></font></td>
+                  <td>10.634<font size="1">±4.025</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>6.408<font size="1">±4.222</font></td>
+                  <td>9.612<font size="1">±6.404</font></td>
+                  <td>5.176<font size="1">±6.023</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td><b>3.481</b><font size="1">±2.275</font></td>
+                  <td>12.672<font size="1">±10.186</font></td>
+                  <td><b>4.742</b><font size="1">±6.664</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td>4.604<font size="1">±<b>2.050</b></font></td>
+                  <td>9.682<font size="1">±5.449</font></td>
+                  <td>7.946<font size="1">±<b>3.402</b></font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Drawer</td>
+                  <td>PointNet++</td>
+                  <td>8.331<font size="1">±3.377</font></td>
+                  <td><b>7.862</b><font size="1">±<b>5.295</b></font></td>
+                  <td>10.227<font size="1">±4.465</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>13.849<font size="1">±3.764</font></td>
+                  <td>12.143<font size="1">±8.030</font></td>
+                  <td>7.725<font size="1">±4.695</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td><b>5.058</b><font size="1">±<b>2.360</b></font></td>
+                  <td>14.666<font size="1">±6.767</font></td>
+                  <td><b>6.967</b><font size="1">±<b>3.114</b></font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td>5.992<font size="1">±3.063</font></td>
+                  <td>11.315<font size="1">±5.596</font></td>
+                  <td>7.733<font size="1">±5.246</font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">WashingMachine</td>
+                  <td>PointNet++</td>
+                  <td>8.845<font size="1">±6.795</font></td>
+                  <td>37.497<font size="1">±20.679</font></td>
+                  <td>19.972<font size="1">±9.440</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>5.162<font size="1">±4.918</font></td>
+                  <td>16.243<font size="1">±12.089</font></td>
+                  <td>11.541<font size="1">±8.232</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>6.488<font size="1">±6.178</font></td>
+                  <td>28.441<font size="1">±14.866</font></td>
+                  <td>15.964<font size="1">±13.286</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>1.578</b><font size="1">±<b>1.201</b></font></td>
+                  <td><b>5.600</b><font size="1">±<b>2.711</b></font></td>
+                  <td><b>3.250</b><font size="1">±<b>0.669</b></font></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered has-text-justified">
+          <div class="column content">
+            <p>
+              We present perception results on real-world point clouds of six articulated objects, 
+              using the models trained only on synthetic data.
+              We collect data by capturing depth images for each object with 5 different joint states, 
+              each from 20 different camera views, 
+              and throw away some bad views which cannot capture enough area of the target part.
+              Here shows the mean estimation errors and standard deviations under the condition of excluding backgrounds and distractors.
+              Lower is better.
+              We can find that RoArtNet demonstrates more stable performance compared to other baselines.
+              However, some performance degradation is found in the StorageFurniture and Drawer categories for RoArtNet, 
+              as well as for ANCSH and GAMMA.
+              This could possibly be attributed to the relatively small size of parts in these two objects, 
+              where all three models somewhat rely on part segmentation to complete the estimation.
+              Another noteworthy observation pertains to the performance on WashingMachine.
+              Specifically, only RoArtNet successfully estimates targets accurately, 
+              while the other three baselines exhibit significantly large estimation errors.
+              We find a potential reason that we take a relatively small washing machine toy as the object, 
+              then the influence of noisy points is relative significant.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <img
+              src="./static/images/real_perception_with_with.png"
+              alt="real_perception_with_with"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered has-text-justified">
+          <div class="column content">
+            <p>
+              We also visualize some qualitative results of the performance on real-world articulation perception, 
+              with both background and distractors included.
+              Color is used only for visualization here.
+              Red arrows represent the estimated articulation joints, 
+              and blue points represent the estimated affordable points.
+              RoArtNet can still generate robust joint parameters and affordable points estimation even with the presence of some unrelated points.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <br />
+        <p>
+          <details>
+            <summary><b>Results under other conditions.</b></summary>
+            <br />
+
+            <div class="columns is-centered has-text-centered has-text-justified">
+            <div class="column content is-four-fifths">
+            <table class="table is-striped is-fullwidth">
+              <thead>
+                <tr>
+                  <th rowspan="2">Category</th>
+                  <th rowspan="2">Method</th>
+                  <th colspan="3">Error (w/o bkg., w/ distr.)</th>
+                </tr>
+                <tr>
+                  <td>Orig. (cm)</td>
+                  <td>Dir. (<sup>o</sup>)</td>
+                  <td>Afford. (cm)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="4">Microwave</td>
+                  <td>PointNet++</td>
+                  <td>4.221<font size="1">±3.345</font></td>
+                  <td>12.868<font size="1">±7.452</font></td>
+                  <td>18.109<font size="1">±6.077</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>5.537<font size="1">±4.723</font></td>
+                  <td>9.881<font size="1">±9.128</font></td>
+                  <td>10.637<font size="1">±9.727</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td><b>3.617</b><font size="1">±5.011</font></td>
+                  <td>12.688<font size="1">±10.575</font></td>
+                  <td><b>6.027</b><font size="1">±6.062</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td>3.729<font size="1">±<b>2.093</b></font></td>
+                  <td><b>5.545</b><font size="1">±<b>3.692</b></font></td>
+                  <td>6.680<font size="1">±<b>3.307</b></font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Refrigerator</td>
+                  <td>PointNet++</td>
+                  <td>4.438<font size="1">±3.450</font></td>
+                  <td><b>8.391</b><font size="1">±<b>4.060</b></font></td>
+                  <td>17.996<font size="1">±9.864</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>6.539<font size="1">±5.800</font></td>
+                  <td>11.547<font size="1">±11.638</font></td>
+                  <td>15.266<font size="1">±25.889</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>3.727<font size="1">±5.176</font></td>
+                  <td>13.007<font size="1">±10.917</font></td>
+                  <td><b>6.150</b><font size="1">±6.283</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>2.423</b><font size="1">±<b>1.826</b></font></td>
+                  <td>9.273<font size="1">±4.481</font></td>
+                  <td>6.289<font size="1">±<b>2.891</b></font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Safe</td>
+                  <td>PointNet++</td>
+                  <td><b>2.946</b><font size="1">±2.487</font></td>
+                  <td>7.398<font size="1">±4.105</font></td>
+                  <td>13.130<font size="1">±6.828</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>5.582<font size="1">±7.415</font></td>
+                  <td><b>5.952</b><font size="1">±8.616</font></td>
+                  <td>10.024<font size="1">±11.781</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>4.255<font size="1">±6.745</font></td>
+                  <td>8.417<font size="1">±15.101</font></td>
+                  <td>9.379<font size="1">±11.808</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td>4.167<font size="1">±<b>2.404</b></font></td>
+                  <td>6.397<font size="1">±<b>3.522</b></font></td>
+                  <td><b>8.467</b><font size="1">±<b>4.172</b></font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">StorageFurniture</td>
+                  <td>PointNet++</td>
+                  <td>8.470<font size="1">±3.952</font></td>
+                  <td>10.673<font size="1">±7.465</font></td>
+                  <td>12.671<font size="1">±5.034</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>7.913<font size="1">±4.695</font></td>
+                  <td>10.727<font size="1">±9.722</font></td>
+                  <td>6.545<font size="1">±9.330</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td><b>3.790</b><font size="1">±3.232</font></td>
+                  <td>14.266<font size="1">±11.795</font></td>
+                  <td><b>5.964</b><font size="1">±8.158</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td>4.683<font size="1">±<b>2.285</b></font></td>
+                  <td><b>9.953</b><font size="1">±<b>5.314</b></font></td>
+                  <td>8.195<font size="1">±<b>3.538</b></font></td>
+                </tr>                
+                <tr>
+                  <td rowspan="4">Drawer</td>
+                  <td>PointNet++</td>
+                  <td>8.070<font size="1">±2.994</font></td>
+                  <td><b>10.079</b><font size="1">±8.011</font></td>
+                  <td>9.893<font size="1">±<b>4.564</b></font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>13.950<font size="1">±4.327</font></td>
+                  <td>16.978<font size="1">±10.289</font></td>
+                  <td>8.993<font size="1">±5.578</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td><b>5.435</b><font size="1">±4.522</font></td>
+                  <td>21.352<font size="1">±10.900</font></td>
+                  <td>9.292<font size="1">±4.868</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td>5.987<font size="1">±<b>2.948</b></font></td>
+                  <td>12.260<font size="1">±<b>6.181</b></font></td>
+                  <td><b>7.604</b><font size="1">±5.094</font></td>
+                </tr>                
+                <tr>
+                  <td rowspan="4">WashingMachine</td>
+                  <td>PointNet++</td>
+                  <td>7.164<font size="1">±5.784</font></td>
+                  <td>38.032<font size="1">±7.299</font></td>
+                  <td>22.339<font size="1">±7.954</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>5.317<font size="1">±5.283</font></td>
+                  <td>22.207<font size="1">±11.601</font></td>
+                  <td>20.071<font size="1">±12.927</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>10.251<font size="1">±6.197</font></td>
+                  <td>29.490<font size="1">±14.238</font></td>
+                  <td>33.499<font size="1">±10.165</font></td>
+                </tr>                
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>1.931</b><font size="1">±<b>1.515</b></font></td>
+                  <td><b>6.610</b><font size="1">±<b>3.584</b></font></td>
+                  <td><b>3.045</b><font size="1">±<b>0.815</b></font></td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table is-striped is-fullwidth">
+              <thead>
+                <tr>
+                  <th rowspan="2">Category</th>
+                  <th rowspan="2">Method</th>
+                  <th colspan="3">Error (w/ bkg., w/o distr.)</th>
+                </tr>
+                <tr>
+                  <td>Orig. (cm)</td>
+                  <td>Dir. (<sup>o</sup>)</td>
+                  <td>Afford. (cm)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="4">Microwave</td>
+                  <td>PointNet++</td>
+                  <td><b>3.836</b><font size="1">±3.277</font></td>
+                  <td>16.282<font size="1">±6.682</font></td>
+                  <td>29.862<font size="1">±7.500</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>4.374<font size="1">±3.235</font></td>
+                  <td>16.242<font size="1">±8.642</font></td>
+                  <td><b>10.206</b><font size="1">±8.468</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>8.818<font size="1">±6.972</font></td>
+                  <td>30.027<font size="1">±14.918</font></td>
+                  <td>10.924<font size="1">±6.667</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td>4.090<font size="1">±<b>2.654</b></font></td>
+                  <td><b>8.795</b><font size="1">±<b>5.443</b></font></td>
+                  <td>10.669<font size="1">±<b>4.989</b></font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Refrigerator</td>
+                  <td>PointNet++</td>
+                  <td>9.099<font size="1">±6.254</font></td>
+                  <td><b>8.776</b><font size="1">±<b>4.015</b></font></td>
+                  <td>37.845<font size="1">±<b>8.664</b></font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>6.827<font size="1">±6.272</font></td>
+                  <td>13.108<font size="1">±8.639</font></td>
+                  <td>40.830<font size="1">±18.239</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>7.728<font size="1">±4.400</font></td>
+                  <td>17.593<font size="1">±11.808</font></td>
+                  <td>36.257<font size="1">±9.741</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>1.759</b><font size="1">±<b>1.226</b></font></td>
+                  <td>13.378<font size="1">±4.940</font></td>
+                  <td><b>22.344</b><font size="1">±13.188</font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Safe</td>
+                  <td>PointNet++</td>
+                  <td>4.451<font size="1">±4.064</font></td>
+                  <td>9.227<font size="1">±<b>4.830</b></font></td>
+                  <td>27.606<font size="1">±<b>10.407</b></font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>4.187<font size="1">±3.796</font></td>
+                  <td><b>8.189</b><font size="1">±6.302</font></td>
+                  <td>22.706<font size="1">±22.378</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>4.770<font size="1">±4.042</font></td>
+                  <td>12.588<font size="1">±11.190</font></td>
+                  <td>28.760<font size="1">±21.317</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>4.080</b><font size="1">±<b>2.451</b></font></td>
+                  <td>9.110<font size="1">±5.211</font></td>
+                  <td><b>14.177</b><font size="1">±11.297</font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">StorageFurniture</td>
+                  <td>PointNet++</td>
+                  <td>8.824<font size="1">±3.337</font></td>
+                  <td>15.280<font size="1">±7.453</font></td>
+                  <td>19.263<font size="1">±<b>3.996</b></font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>9.545<font size="1">±5.131</font></td>
+                  <td><b>14.756</b><font size="1">±8.220</font></td>
+                  <td>17.906<font size="1">±14.541</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>7.035<font size="1">±6.011</font></td>
+                  <td>17.755<font size="1">±12.999</font></td>
+                  <td><b>11.537</b><font size="1">±6.942</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>5.412</b><font size="1">±<b>2.317</b></font></td>
+                  <td>15.231<font size="1">±<b>7.233</b></font></td>
+                  <td>16.178<font size="1">±7.671</font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Drawer</td>
+                  <td>PointNet++</td>
+                  <td>11.941<font size="1">±2.792</font></td>
+                  <td><b>15.317</b><font size="1">±<b>11.009</b></font></td>
+                  <td>10.482<font size="1">±4.331</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>14.548<font size="1">±5.177</font></td>
+                  <td>25.986<font size="1">±19.512</font></td>
+                  <td>16.010<font size="1">±9.062</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>8.278<font size="1">±5.202</font></td>
+                  <td>24.222<font size="1">±11.627</font></td>
+                  <td>11.612<font size="1">±5.162</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>5.421</b><font size="1">±<b>2.640</b></font></td>
+                  <td>31.047<font size="1">±14.201</font></td>
+                  <td><b>6.975</b><font size="1">±<b>3.863</b></font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">WashingMachine</td>
+                  <td>PointNet++</td>
+                  <td>13.173<font size="1">±5.409</font></td>
+                  <td><b>28.902</b><font size="1">±36.464</font></td>
+                  <td>21.926<font size="1">±7.421</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>14.284<font size="1">±9.836</font></td>
+                  <td>35.215<font size="1">±11.183</font></td>
+                  <td>37.200<font size="1">±15.121</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>16.715<font size="1">±4.757</font></td>
+                  <td>31.681<font size="1">±12.746</font></td>
+                  <td>44.088<font size="1">±17.161</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>2.558</b><font size="1">±<b>1.548</b></font></td>
+                  <td>30.313<font size="1">±<b>6.631</b></font></td>
+                  <td><b>6.937</b><font size="1">±<b>7.197</b></font></td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table is-striped is-fullwidth">
+              <thead>
+                <tr>
+                  <th rowspan="2">Category</th>
+                  <th rowspan="2">Method</th>
+                  <th colspan="3">Error (w/ bkg., w/ distr.)</th>
+                </tr>
+                <tr>
+                  <td>Orig. (cm)</td>
+                  <td>Dir. (<sup>o</sup>)</td>
+                  <td>Afford. (cm)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="4">Microwave</td>
+                  <td>PointNet++</td>
+                  <td><b>3.205</b><font size="1">±3.742</font></td>
+                  <td>16.407<font size="1">±6.116</font></td>
+                  <td>30.523<font size="1">±8.827</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>4.531<font size="1">±4.053</font></td>
+                  <td>18.080<font size="1">±9.565</font></td>
+                  <td>11.850<font size="1">±11.519</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>8.880<font size="1">±6.624</font></td>
+                  <td>30.164<font size="1">±14.783</font></td>
+                  <td><b>10.646</b><font size="1">±6.950</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td>4.041<font size="1">±<b>2.994</b></font></td>
+                  <td><b>9.096</b><font size="1">±<b>5.514</b></font></td>
+                  <td>11.433<font size="1">±<b>6.030</b></font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Refrigerator</td>
+                  <td>PointNet++</td>
+                  <td>8.183<font size="1">±5.680</font></td>
+                  <td><b>8.922</b><font size="1">±<b>4.013</b></font></td>
+                  <td>37.193<font size="1">±<b>8.515</b></font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>7.645<font size="1">±6.023</font></td>
+                  <td>14.254<font size="1">±8.707</font></td>
+                  <td>42.693<font size="1">±16.013</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>8.011<font size="1">±4.291</font></td>
+                  <td>18.199<font size="1">±12.155</font></td>
+                  <td>36.599<font size="1">±9.876</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>1.825</b><font size="1">±<b>1.510</b></font></td>
+                  <td>12.609<font size="1">±5.196</font></td>
+                  <td><b>28.155</b><font size="1">±15.367</font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Safe</td>
+                  <td>PointNet++</td>
+                  <td>4.563<font size="1">±3.826</font></td>
+                  <td>9.821<font size="1">±<b>5.710</b></font></td>
+                  <td>27.856<font size="1">±<b>10.055</b></font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>4.287<font size="1">±4.162</font></td>
+                  <td><b>8.827</b><font size="1">±7.460</font></td>
+                  <td>30.179<font size="1">±29.790</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>4.679<font size="1">±<b>3.051</b></font></td>
+                  <td>13.028<font size="1">±10.528</font></td>
+                  <td>29.171<font size="1">±20.909</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>3.874</b><font size="1">±3.145</font></td>
+                  <td>9.723<font size="1">±5.760</font></td>
+                  <td><b>16.075</b><font size="1">±13.660</font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">StorageFurniture</td>
+                  <td>PointNet++</td>
+                  <td>9.131<font size="1">±3.238</font></td>
+                  <td>15.990<font size="1">±<b>7.914</b></font></td>
+                  <td>19.557<font size="1">±<b>4.144</b></font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>9.035<font size="1">±4.796</font></td>
+                  <td><b>15.634</b><font size="1">±8.659</font></td>
+                  <td>18.934<font size="1">±16.764</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>8.079<font size="1">±6.764</font></td>
+                  <td>19.655<font size="1">±14.928</font></td>
+                  <td><b>13.063</b><font size="1">±8.537</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>5.509</b><font size="1">±<b>2.312</b></font></td>
+                  <td>17.014<font size="1">±12.322</font></td>
+                  <td>16.960<font size="1">±8.073</font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Drawer</td>
+                  <td>PointNet++</td>
+                  <td>12.179<font size="1">±<b>2.296</b></font></td>
+                  <td><b>15.733</b><font size="1">±<b>10.773</b></font></td>
+                  <td>10.610<font size="1">±4.371</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>13.466<font size="1">±3.782</font></td>
+                  <td>23.667<font size="1">±15.122</font></td>
+                  <td>16.450<font size="1">±8.489</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>8.099<font size="1">±5.016</font></td>
+                  <td>24.720<font size="1">±13.237</font></td>
+                  <td>12.067<font size="1">±5.979</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>5.644</b><font size="1">±2.866</font></td>
+                  <td>24.953<font size="1">±19.676</font></td>
+                  <td><b>7.116</b><font size="1">±<b>3.809</b></font></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">WashingMachine</td>
+                  <td>PointNet++</td>
+                  <td>12.637<font size="1">±5.667</font></td>
+                  <td>49.705<font size="1">±39.372</font></td>
+                  <td>21.780<font size="1">±8.179</font></td>
+                </tr>
+                <tr>
+                  <td>ANCSH</td>
+                  <td>13.566<font size="1">±9.472</font></td>
+                  <td>33.461<font size="1">±12.217</font></td>
+                  <td>37.235<font size="1">±14.823</font></td>
+                </tr>
+                <tr>
+                  <td>GAMMA</td>
+                  <td>16.057<font size="1">±4.941</font></td>
+                  <td>32.291<font size="1">±12.797</font></td>
+                  <td>41.861<font size="1">±16.963</font></td>
+                </tr>
+                <tr>
+                  <td>RoArtNet (ours)</td>
+                  <td><b>2.673</b><font size="1">±<b>1.723</b></font></td>
+                  <td><b>30.318</b><font size="1">±<b>6.537</b></font></td>
+                  <td><b>7.438</b><font size="1">±<b>6.025</b></font></td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            </div>
+            <p>
+              Results show that RoArtNet outperforms other models even with the presence of other unrelated points.
+              It is attributed to our articulation awareness scheme, which can select good point tuples for voting, 
+              filtering out the point tuples from the background and distractors.
+              This is reflected particularly when distractors are included but without background, 
+              where the performance of RoArtNet almost does not degrade.
+              However, when the background is included, 
+              since the background occupies a large portion of the point cloud, 
+              RoArtNet also shows a performance drop.
+              This is reflected particularly for WashingMachine category, 
+              which itself is relatively small.
+            </p>
+          </details>
+        </p>
+        <br />
+      </div>
+
+      <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <h3 class="title is-4">Real-world Manipulation</h3>
