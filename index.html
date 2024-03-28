@@ -1605,6 +1605,222 @@
           </div>
         </div>
       </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered has-text-justified">
+          <div class="column content is-four-fifths">
+            <table class="table is-striped is-fullwidth">
+              <thead>
+                <tr>
+                  <th colspan="2">Tasks</th>
+                  <th>PointNet++</th>
+                  <th>ANCSH</th>
+                  <th>GAMMA</th>
+                  <th>RPMArt (ours)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">Microwave</td>
+                  <td>Pull</td>
+                  <td>6/2/2</td>
+                  <td>4/0/6</td>
+                  <td>8/1/1</td>
+                  <td><b>9/1/0</b></td>
+                </tr>
+                <tr>
+                  <td>Push</td>
+                  <td>5/4/1</td>
+                  <td>3/4/3</td>
+                  <td>6/3/1</td>
+                  <td><b>7/1/2</b></td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Refrigerator</td>
+                  <td>Pull</td>
+                  <td>2/1/7</td>
+                  <td>1/1/8</td>
+                  <td>3/1/6</td>
+                  <td><b>7/0/3</b></td>
+                </tr>
+                <tr>
+                  <td>Push</td>
+                  <td>0/0/10</td>
+                  <td>1/0/9</td>
+                  <td>2/0/8</td>
+                  <td><b>8/1/1</b></td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Safe</td>
+                  <td>Pull</td>
+                  <td><b>7/0/3</b></td>
+                  <td>5/2/3</td>
+                  <td>5/1/4</td>
+                  <td><b>7/0/3</b></td>
+                </tr>
+                <tr>
+                  <td>Push</td>
+                  <td>7/0/3</td>
+                  <td><b>7/1/2</b></td>
+                  <td><b>7/1/2</b></td>
+                  <td><b>7/1/2</b></td>
+                </tr>
+                <tr>
+                  <td rowspan="2">StorageFurniture</td>
+                  <td>Pull</td>
+                  <td>1/0/9</td>
+                  <td>3/1/6</td>
+                  <td>2/1/7</td>
+                  <td><b>4/0/6</b></td>
+                </tr>
+                <tr>
+                  <td>Push</td>
+                  <td>2/2/6</td>
+                  <td><b>6/2/2</b></td>
+                  <td>2/3/5</td>
+                  <td>5/2/3</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Drawer</td>
+                  <td>Pull</td>
+                  <td>1/1/8</td>
+                  <td>2/1/7</td>
+                  <td>0/2/8</td>
+                  <td><b>2/2/6</b></td>
+                </tr>
+                <tr>
+                  <td>Push</td>
+                  <td>2/0/8</td>
+                  <td>2/1/7</td>
+                  <td>0/0/10</td>
+                  <td><b>3/2/5</b></td>
+                </tr>
+                <tr>
+                  <td rowspan="2">WashingMachine</td>
+                  <td>Pull</td>
+                  <td>0/0/10</td>
+                  <td>0/1/9</td>
+                  <td>0/0/10</td>
+                  <td><b>3/3/4</b></td>
+                </tr>
+                <tr>
+                  <td>Push</td>
+                  <td>0/0/10</td>
+                  <td>0/0/10</td>
+                  <td>0/0/10</td>
+                  <td><b>1/2/7</b></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered has-text-justified">
+          <div class="column content">
+            <p>
+              We also apply the models to manipulate the real articulated objects, 
+              under the condition of excluding backgrounds and distractors.
+              We run 10 trials for each task, 
+              and count the number of successful, half-successful and failed trials.
+              Here, half-successful trials include behaviors like detaching during pulling and pushing forcefully.
+              RPMArt outperforms other counterparts, especially for Refrigerator and WashingMachine.
+              Refrigerator has a glossy surface, while WashingMachine is relatively small, 
+              which makes the noise more prominent.
+            </p>
+
+            <!-- <br /> -->
+            <p>
+              <details>
+                <summary><b>Some half-successful example trials.</b></summary>
+                <br />
+
+                <video controls autoplay muted loop style="width: 100%">
+                  <source
+                    src="./static/videos/real_half_successful_compressed.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+                <br />
+                <p>
+                  Due to inaccurate joint parameters estimation, 
+                  the robot occasionally detaches the object during manipulation.
+                  And due to incomplete point cloud and inaccurate affordable point estimation, 
+                  the selected grasp pose may not be suitable for manipulation.
+                </p>
+              </details>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered has-text-justified">
+          <div class="column content is-four-fifths">
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/real_microwave_pull_compressed.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+          </div>
+        </div>
+
+        <p>
+          We demonstrate three consecutive Pull Microwave tasks finished by RPMArt, 
+          each with random initial pose of the microwave.
+          The robot can successfully pull the microwave.
+        </p>
+        <br />
+
+        <div class="columns is-centered has-text-centered has-text-justified">
+          <div class="column content is-four-fifths">
+            <video controls autoplay muted loop style="width: 100%">
+              <source
+                src="./static/videos/real_manipulation_all_compressed.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+          </div>
+        </div>
+
+        <!-- <br /> -->
+        <p>
+          We also list the demo videos for each task finished successfully by RPMArt.
+          The Pull Microwave task video is shown with a closer camera view in another trial, since already shown above.
+          These validate the sim-to-real transfer capability of RPMArt.
+        </p>
+      </div>
+
+      <div class="container is-max-desktop">
+        <br />
+        <p>
+          <details>
+            <summary><b>A typical failed trial.</b></summary>
+            <br />
+
+            <div class="columns is-centered has-text-centered has-text-justified">
+            <div class="column content is-four-fifths">
+              <video controls autoplay muted loop style="width: 100%">
+                <source
+                  src="./static/videos/real_safe_pull_fail_compressed.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            </div>
+            <p>
+              Since the estimation of affordable point is inaccurate, 
+              and the captured points of the handle are not obvious, 
+              the selected grasp pose can be located on the base instead of the target part.
+            </p>
+          </details>
+        </p>
+        <br />
+      </div>
     </section>
 
     <!-- <section class="section" id="BibTeX">
