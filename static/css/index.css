@@ -194,3 +194,14 @@ td:last-child {
   color: gray;
   font-weight: normal;
 }
+
+.conference {
+  color: gray;
+  font-size: 18px;
+}
+
+.grad_text {
+  background: -webkit-linear-gradient(right, #003f5c, #58508d, #bc5090, #ff6361, #ffa600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
