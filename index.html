@@ -129,7 +129,7 @@
                   ><sup>1</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="https://www.mvig.org/">Cewu Lu</a><sup>1</sup>,
+                  <a href="https://www.mvig.org/">Cewu Lu</a><sup>1</sup>
                 </span>
               </div>
 
@@ -157,9 +157,20 @@
                       <span>Paper</span>
                     </a>
                   </span>
+				          <span class="link-block">
+                    <a
+                      href="https://rasevents.org/presentation?id=144610"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-file-image"></i>
+                      </span>
+                      <span>Poster</span>
+                    </a>
+                  </span>
                   <span class="link-block">
                     <a
-                      href="https://youtu.be/7yc26ZQcpc0?si=yVclyJ8Drl-8G7YP"
+                      href="https://youtu.be/7yc26ZQcpc0"
                       class="external-link button is-normal is-rounded is-dark"
                     >
                       <span class="icon">
@@ -177,6 +188,17 @@
                         <i class="fab fa-github"></i>
                       </span>
                       <span>Code</span>
+                    </a>
+                  </span>
+				          <span class="link-block">
+                    <a
+                      href="https://huggingface.co/dadadadawjb/RoArtNet"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fa fa-sitemap"></i>
+                      </span>
+                      <span>Model</span>
                     </a>
                   </span>
                   <span class="link-block">
@@ -1027,8 +1049,8 @@
             <p>
               We present perception results on real-world point clouds of six articulated objects, 
               using the models trained only on synthetic data.
-              We collect data by capturing depth images for each object with 5 different joint states, 
-              each from 20 different camera views, 
+              We collect data by capturing depth images for each object with 5 uniformly selected joint states, 
+              each from 20 randomly selected camera views, 
               and throw away some bad views which cannot capture enough area of the target part.
               Here shows the mean estimation errors and standard deviations under the condition of excluding backgrounds and distractors.
               Lower is better.
